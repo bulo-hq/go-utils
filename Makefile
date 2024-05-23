@@ -2,4 +2,3 @@
 
 install:
 	go mod tidy
-	go get -u
