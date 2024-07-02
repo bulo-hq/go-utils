@@ -9,7 +9,7 @@ import (
 	"google.golang.org/api/idtoken"
 )
 
-func GetAuthorizationHeader(endpoint string) (*string, error) {
+func GetAccessToken(endpoint string) (*string, error) {
 	accessToken := os.Getenv("GOOGLE_CLOUD_RUN_ACCESS_TOKEN")
 	if accessToken != "" {
 		return &accessToken, nil
