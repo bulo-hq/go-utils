@@ -19,16 +19,17 @@ go get -u github.com/bulo-hq/go-utils
 
 ### PostgreSQL
 
-| Name                      | Default Value |
-| ------------------------- | ------------- |
-| POSTGRES_HOST             | 127.0.0.1     |
-| POSTGRES_PORT             | 5432          |
-| POSTGRES_NAME             | postgres      |
-| POSTGRES_USER             | postgres      |
-| POSTGRES_PASS             | postgres      |
-| POSTGRES_SSL_MODE         | verify-full   |
-| POSTGRES_ROOT_CERT_PATH   |               |
-| POSTGRES_CLIENT_CERT_PATH |               |
-| POSTGRES_CLIENT_KEY_PATH  |               |
+| Name                          | Default Value |
+| ----------------------------- | ------------- |
+| POSTGRES_HOST                 | 127.0.0.1     |
+| POSTGRES_PORT                 | 5432          |
+| POSTGRES_NAME                 | postgres      |
+| POSTGRES_USER                 | postgres      |
+| POSTGRES_PASS                 | postgres      |
+| POSTGRES_SSL_MODE             | verify-full   |
+| POSTGRES_ROOT_CERT_PATH       |               |
+| POSTGRES_CLIENT_CERT_PATH     |               |
+| POSTGRES_CLIENT_KEY_PATH      |               |
+| GOOGLE_CLOUD_RUN_ACCESS_TOKEN |               |
 
 &copy; 2024 BuLo Developers
