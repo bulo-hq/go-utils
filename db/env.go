@@ -12,7 +12,7 @@ const (
 	defaultPass = "postgres"
 )
 
-func Env() (
+func getEnv() (
 	string, // host
 	string, // port
 	string, // dbname

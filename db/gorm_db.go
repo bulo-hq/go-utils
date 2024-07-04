@@ -1,7 +1,6 @@
 package db
 
 import (
-	"database/sql"
 	"fmt"
 	"os"
 
@@ -10,14 +9,15 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-func GetGORMDB(db *sql.DB) (*gorm.DB, error) {
+func GetGORM(schemaName string) (*gorm.DB, error) {
 	logMode := logger.Silent
 	if os.Getenv("MODE") == "DEBUG" {
 		logMode = logger.Info
 	}
 
 	gormDB, err := gorm.Open(postgres.New(postgres.Config{
-		Conn: db,
+		DriverName: "pgx",
+		DSN:        getURI(schemaName),
 	}), &gorm.Config{
 		Logger: logger.Default.LogMode(logMode),
 	})
