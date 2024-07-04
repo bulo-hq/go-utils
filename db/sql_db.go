@@ -21,7 +21,10 @@ func GetSQLDB(
 	uri += fmt.Sprintf(" dbname=%s", dbname)
 	uri += fmt.Sprintf(" user=%s", user)
 	uri += fmt.Sprintf(" password=%s", password)
-	uri += fmt.Sprintf(" sslmode=%s", sslmode)
+
+	if sslmode != "" {
+		uri += fmt.Sprintf(" sslmode=%s", sslmode)
+	}
 
 	if sslrootcert != "" {
 		uri += fmt.Sprintf(" sslrootcert=%s", sslrootcert)

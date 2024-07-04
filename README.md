@@ -26,7 +26,7 @@ go get -u github.com/bulo-hq/go-utils
 | POSTGRES_NAME                 | postgres      |
 | POSTGRES_USER                 | postgres      |
 | POSTGRES_PASS                 | postgres      |
-| POSTGRES_SSL_MODE             | verify-full   |
+| POSTGRES_SSL_MODE             |               |
 | POSTGRES_ROOT_CERT_PATH       |               |
 | POSTGRES_CLIENT_CERT_PATH     |               |
 | POSTGRES_CLIENT_KEY_PATH      |               |

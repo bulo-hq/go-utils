@@ -5,12 +5,11 @@ import (
 )
 
 const (
-	defaultHost    = "127.0.0.1"
-	defaultPort    = "5432"
-	defaultName    = "postgres"
-	defaultUser    = "postgres"
-	defaultPass    = "postgres"
-	defaultSSLMode = "verify-full"
+	defaultHost = "127.0.0.1"
+	defaultPort = "5432"
+	defaultName = "postgres"
+	defaultUser = "postgres"
+	defaultPass = "postgres"
 )
 
 func Env() (
@@ -48,9 +47,6 @@ func Env() (
 	}
 	if password == "" {
 		password = defaultPass
-	}
-	if sslmode == "" {
-		sslmode = defaultSSLMode
 	}
 
 	return host, port, dbname, user, password, sslmode, sslrootcert, sslcert, sslkey
