@@ -3,6 +3,7 @@ module github.com/bulo-hq/go-utils
 go 1.22.3
 
 require (
+	github.com/joho/godotenv v1.5.1
 	google.golang.org/api v0.187.0
 	gorm.io/driver/postgres v1.5.7
 	gorm.io/gorm v1.25.10
